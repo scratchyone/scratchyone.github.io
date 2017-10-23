@@ -1,0 +1,28 @@
+---
+layout: post
+title: On-The-Fly Code Injection (Inserting Header and Footer)
+author: scratchyone
+published: true
+date: 2016-01-17T09:33:00-0500
+categories: 
+  - blog
+
+---
+
+<p>Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&nbsp;<a href="https://www.scratchyone.com/favicons.html" target="_blank">this</a>&nbsp;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe someone will want it.<br />
+Htaccess:<br />
+<code><br />
+RewriteEngine On<br />
+RewriteRule ^head_foot.php$ - [L]<br />
+RewriteCond %{REQUEST_FILENAME} -f<br />
+RewriteCond %{REQUEST_URI} !^/joke/ #Exclude scripts that generate images. This will corrupt them.<br />
+RewriteRule \.(php|htm|html)$ /head_foot.php [E=FILE:%{SCRIPT_FILENAME},L]<br />
+</code></p>
+<p>head_foot.php:<br />
+<code><br />
+&lt;?php<br />
+include(&quot;header.html&quot;); #Add Header<br />
+#Now get webpage:<br />
+include getenv(&#039;REDIRECT_FILE&#039;);<br />
+?&gt;<br />
+</code></p>
