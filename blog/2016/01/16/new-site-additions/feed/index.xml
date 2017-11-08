@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: New site additions!</title>
+	<atom:link href="/2016/01/16/new-site-additions/feed/" rel="self" type="application/rss+xml" />
+	<link>/2016/01/16/new-site-additions/</link>
+	<description>Just another WordPress site</description>
+	<lastBuildDate>Tue, 23 Aug 2016 22:44:24 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.3</generator>
+	<item>
+		<title>By: Scratchyone</title>
+		<link>/2016/01/16/new-site-additions/#comment-7</link>
+		<dc:creator><![CDATA[Scratchyone]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 18:47:27 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-7</guid>
+		<description><![CDATA[Also, not sure if you were notified because of my edit, but please read my comment above. I should have been more clear.]]></description>
+		<content:encoded><![CDATA[<p>Also, not sure if you were notified because of my edit, but please read my comment above. I should have been more clear.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Scratchyone</title>
+		<link>/2016/01/16/new-site-additions/#comment-6</link>
+		<dc:creator><![CDATA[Scratchyone]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 14:25:50 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-6</guid>
+		<description><![CDATA[Oh! By &quot;Markdown&quot;, I meant the way of formatting text, for example **Hello!** is &lt;strong&gt;Hello&lt;/strong&gt;. https://help.github.com/articles/markdown-basics/]]></description>
+		<content:encoded><![CDATA[<p>Oh! By &#8220;Markdown&#8221;, I meant the way of formatting text, for example **Hello!** is <strong>Hello</strong>. <a href="https://help.github.com/articles/markdown-basics/" rel="nofollow">https://help.github.com/articles/markdown-basics/</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Scratchyone</title>
+		<link>/2016/01/16/new-site-additions/#comment-8</link>
+		<dc:creator><![CDATA[Scratchyone]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 14:21:00 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-8</guid>
+		<description><![CDATA[Also, I just switched to disqus. I found an XSS vulnerability in wordpresss comments.]]></description>
+		<content:encoded><![CDATA[<p>Also, I just switched to disqus. I found an XSS vulnerability in wordpresss comments.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Scratchyone</title>
+		<link>/2016/01/16/new-site-additions/#comment-5</link>
+		<dc:creator><![CDATA[Scratchyone]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 14:16:25 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-5</guid>
+		<description><![CDATA[I&#039;m using GoDaddy: https://www.godaddy.com/hosting/web-hosting. The cheapest plan is great, and they have amazing support (My site was rmed and they recovered everything). Thanks! To help speed up my site, I am using Google PageSpeed Insights (https://developers.google.com/speed/pagespeed/insights/). It tells what to do to speed up your site. I also do &#060;script ASYNC... in the script tags for things like bootstrap. I&#039;m a little worried that all the code I am injecting might slow it down, though.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m using GoDaddy: <a href="https://www.godaddy.com/hosting/web-hosting" rel="nofollow">https://www.godaddy.com/hosting/web-hosting</a>. The cheapest plan is great, and they have amazing support (My site was rmed and they recovered everything). Thanks! To help speed up my site, I am using Google PageSpeed Insights (<a href="https://developers.google.com/speed/pagespeed/insights/" rel="nofollow">https://developers.google.com/speed/pagespeed/insights/</a>). It tells what to do to speed up your site. I also do &lt;script ASYNC&#8230; in the script tags for things like bootstrap. I&#8217;m a little worried that all the code I am injecting might slow it down, though.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: vancouver web design</title>
+		<link>/2016/01/16/new-site-additions/#comment-4</link>
+		<dc:creator><![CDATA[vancouver web design]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 13:20:33 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-4</guid>
+		<description><![CDATA[That implies concentrating on your industry, customer base, and exactly what 
+make your business special.]]></description>
+		<content:encoded><![CDATA[<p>That implies concentrating on your industry, customer base, and exactly what<br />
+make your business special.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Petra</title>
+		<link>/2016/01/16/new-site-additions/#comment-3</link>
+		<dc:creator><![CDATA[Petra]]></dc:creator>
+		<pubDate>Sun, 17 Jan 2016 02:30:40 +0000</pubDate>
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27#comment-3</guid>
+		<description><![CDATA[Great blog here! Also your web site loads up fast! What 
+host are you using? Can I get your affiliate link to your 
+host? I wish my site loaded up as fast as yours lol]]></description>
+		<content:encoded><![CDATA[<p>Great blog here! Also your web site loads up fast! What<br />
+host are you using? Can I get your affiliate link to your<br />
+host? I wish my site loaded up as fast as yours lol</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
