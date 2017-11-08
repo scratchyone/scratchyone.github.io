@@ -1,0 +1,13 @@
+<div id="menu"></div>
+<h1>Content</h1>
+<p>Lorem Ipsum I forget the rest blah blah blah blah</p>
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("menu").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "https://www.scratchyone.com/menu.html", true);
+  xhttp.send();
+</script>

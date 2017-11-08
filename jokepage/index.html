@@ -1,0 +1,54 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
+<script>
+window.onload= function() {
+  swal({
+    title: 'PHP Issue',
+    text: "I have recently switched to static hosting, and now I can't run php. I am working on a fix to this issue.",
+    type: 'warning',
+    confirmButtonColor: '#2957ff',
+    confirmButtonText: 'Go Back',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+  }).then(function () {
+    window.history.back()
+  })
+}
+</script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center light-blue-text">Joke Generator</h1>
+</div>
+</div>
+<img id="joke" src="https://scratchyone.com/joke/index.php?num=0" style="text-align: center; width: 80%; height: auto;"></img>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="row center">
+        <a href="#" id="joke-button" class="btn-large waves-effect waves-light orange" onclick="document.getElementById('joke').src=document.getElementById('joke').src+Math.random()">New Joke!</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+<style>
+body {
+background: #CBECD7;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    background-image: url("");
+}
+</style>
+<div style="text-align: center; background-color: gray;" class="bottom">
+<a style="color: yellow;" href="embed.php">Want this on your website?</a>
+</div>

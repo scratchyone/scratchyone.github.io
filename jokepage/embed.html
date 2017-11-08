@@ -1,0 +1,40 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.min.css">
+<script>
+window.onload= function() {
+  swal({
+    title: 'PHP Issue',
+    text: "I have recently switched to static hosting, and now I can't run php. I am working on a fix to this issue.",
+    type: 'warning',
+    confirmButtonColor: '#2957ff',
+    confirmButtonText: 'Go Back',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+  }).then(function () {
+    window.history.back()
+  })
+}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+body {
+background: #CBECD7;
+}
+</style>
+<head><h1 style="text-align: center;">Embed a joke on your website</h1></head>
+<p>Add this code to your website.</p>
+<pre class="lang-markup">
+<code>
+&lt;img src=&#039;https://scratchyone.com/joke/index.php&#039; style=&#039;width: 80%; height: auto;&#039;&#62;&lt;/img&#62;
+</code>
+</pre>
+<script src="https://www.scratchyone.com/prism.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.scratchyone.com/prism.css">

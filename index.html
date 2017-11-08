@@ -1,0 +1,150 @@
+<html><head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <style>
+      a.link:hover {
+        text-decoration: underline;
+      }
+      </style>
+
+      <script>
+      function currentYPosition() {
+      // Firefox, Chrome, Opera, Safari
+      if (self.pageYOffset) return self.pageYOffset;
+      // Internet Explorer 6 - standards mode
+      if (document.documentElement && document.documentElement.scrollTop)
+          return document.documentElement.scrollTop;
+      // Internet Explorer 6, 7 and 8
+      if (document.body.scrollTop) return document.body.scrollTop;
+      return 0;
+      }
+      function elmYPosition(eID) {
+          var elm = document.getElementById(eID);
+          var y = elm.offsetTop;
+          var node = elm;
+          while (node.offsetParent && node.offsetParent != document.body) {
+              node = node.offsetParent;
+              y += node.offsetTop;
+          } return y;
+      }
+
+function currentYPosition() {
+  // Firefox, Chrome, Opera, Safari
+  if (self.pageYOffset) return self.pageYOffset;
+  // Internet Explorer 6 - standards mode
+  if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+  // Internet Explorer 6, 7 and 8
+  if (document.body.scrollTop) return document.body.scrollTop;
+  return 0;
+}
+
+function elmYPosition(eID) {
+  var elm = document.getElementById(eID);
+  var y = elm.offsetTop;
+  var node = elm;
+  while (node.offsetParent && node.offsetParent != document.body) {
+      node = node.offsetParent;
+      y += node.offsetTop;
+  } return y;
+}
+function smoothScroll(eID) {
+  var startY = currentYPosition();
+  var stopY = elmYPosition(eID);
+  var distance = stopY > startY ? stopY - startY : startY - stopY;
+  if (distance < 100) {
+      scrollTo(0, stopY); return;
+  }
+  var speed = Math.round(distance / 100);
+  if (speed >= 20) speed = 20;
+  var step = 2
+  var leapY = stopY > startY ? startY + step : startY - step;
+  var timer = 0;
+  if (stopY > startY) {
+      for ( var i=startY; i<stopY; i+=step ) {
+          setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+          leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+      } return;
+  }
+  for ( var i=startY; i>stopY; i-=step ) {
+      setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+      leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+  }
+  return false;
+}
+
+      </script><style type="text/css">
+:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle
+{ display: none !important; }</style>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head><body cz-shortcut-listen="true"><div class="section no-pad-bot" id="index-banner">
+          <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Scratchyone's Website</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">Check out some of my projects!</h5>
+            </div>
+            <div class="row center">
+              <a href="#" onclick="smoothScroll('projects')" id="scroll-button" class="btn-large waves-effect waves-light blue">Check them out</a>
+            </div>
+            <br><br>
+
+          </div>
+        </div>
+        <div class="container" id="projects">
+            <div class="section">
+
+              <!--   Icon Section   -->
+              <div class="row">
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center red-text"><i class="material-icons">new_releases</i></h2>
+                    <h5 class="center">Welcome to my new website!</h5>
+
+                    <p class="light">I redesigned my website again! I got bored of bootstrap, and decided to make a material design version. I think it turned out pretty well!</p>
+                  </div>
+                </div>
+
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center red-text"><i class="material-icons">subject</i></h2>
+                    <h5 class="center"><a class="link" href="blog">Blog</a></h5>
+
+                    <p class="light">I decided to create a blog. It's hosted using wordpress.<br><br>I hope you like it. I am going to try to post somewhat often. Check it out!</p>
+                  </div>
+                </div>
+
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center red-text"><i class="material-icons">code</i></h2>
+                    <h5 class="center"><a class="link" href="jokepage">Joke Generator</a></h5>
+
+                    <p class="light">This is a script that generates an image that contains a computer joke.<br><br><a href="jokepage" class="link">Check it out</a>! You can also <a class="link" href="jokepage/embed.php">embed it on your website</a>.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br><br>
+
+            <div class="section">
+
+            </div>
+          </div>
+
+
+
+
+
+<div class="hiddendiv common"></div></body></html>

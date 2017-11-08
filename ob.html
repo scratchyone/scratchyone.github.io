@@ -1,0 +1,30 @@
+<textarea rows="20" cols="50" id="txtarea">
+</textarea>
+<p>
+Each seperate line will be run individually, so make sure you only have one line functions!
+</p>
+<button onclick="run()">Obfuscate</button>
+<button onclick="runc()">Run Code in text box</button>
+<script>
+function run() {
+var textArea = document.getElementById("txtarea");
+var lines = textArea.value.split("\n"); // arrayOfLines is array where every element is string of one line
+for (var i = lines.length; i > 0; --i) {
+try {
+if(lines[i-1].charAt(lines[i-1].length-1)==";") {
+lines[i-1]=lines[i-1]+"eval(atob(\""+btoa(lines[i])+"\"));";
+} else {
+lines[i-1]=lines[i-1]+";eval(atob(\""+btoa(lines[i])+"\"));";
+}
+}
+catch(err) {
+
+}
+}
+document.getElementById("txtarea").value="eval(atob(\""+btoa(lines[0])+"\"));"
+}
+function runc() {
+eval(document.getElementById("txtarea").value);
+}
+</script>
+<a href="http://www.textfixer.com/tools/remove-line-breaks.php">Line break remover</a>

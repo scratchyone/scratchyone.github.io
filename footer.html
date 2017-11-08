@@ -1,0 +1,119 @@
+<noscript>
+<style>
+div.nopescript {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+    background-color: #ff9900 !important;
+}
+</style>
+<div class="nopescript">
+<h3 style="text-align: center;">
+You need Javascript to use this site! <a href="http://www.enable-javascript.com/" target="_blank">Here</a> are instructions on how to enable javascript.
+</h3>
+</div>
+</noscript>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+showMathMenu: false,
+showMathMenuMSIE: false,
+messageStyle: "none",
+showProcessingMessages: false
+  });</script>
+<script async src="https://www.scratchyone.com/ampar.js"></script>
+<script>
+var loadchecki=window.setInterval(function() {if (document.readyState === "complete") { initi(); }},10)
+
+function initi() {
+clearInterval(loadchecki);
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+thing=document.getElementsByTagName("emoji");for (i=0;i<thing.length;i++) {
+it = thing[i];
+tempit=it.innerHTML;
+tempit=tempit.replace(":P",":stuck_out_tongue:");
+if(tempit.charAt(0)==":" && tempit.charAt(tempit.length-1)==":"){
+tempit = tempit.substr(1, tempit.length-2);
+}
+it.innerHTML="<img src='http://u.cubeupload.com/git/"+tempit.replaceAll("_","")+".png'/>";
+}
+}
+</script>
+<script>
+var loadcheckii=window.setInterval(function() {if (document.readyState === "complete") {
+clearInterval(loadcheckii);
+thing=document.getElementsByTagName("map");for (i=0;i<thing.length;i++) {
+it = thing[i];
+tempit=it.innerHTML;
+tempsplit=tempit.split("~");
+if(typeof(tempsplit[1])!="undefined"){
+if(typeof(tempsplit[2])!="undefined"){
+it.innerHTML="<img src='https://maps.googleapis.com/maps/api/staticmap?markers=color:Red%7Clabel:A%7C"+tempsplit[0]+"&size="+tempsplit[2]+"&zoom="+tempsplit[1]+"'/>";
+} else {
+it.innerHTML="<img src='https://maps.googleapis.com/maps/api/staticmap?markers=color:Red%7Clabel:A%7C"+tempsplit[0]+"&size=600x300&zoom="+tempsplit[1]+"'/>";
+}
+} else {
+it.innerHTML="<img src='https://maps.googleapis.com/maps/api/staticmap?markers=color:Red%7Clabel:A%7C"+tempsplit[0]+"&size=600x300&zoom=5'/>";
+}
+}
+}},10)
+
+</script>
+<script>
+$(document).ready(function(){
+function getRemote(remote_url) {
+    return $.ajax({
+        type: "GET",
+        url: remote_url,
+        async: false
+    }).responseText;
+}
+thing=document.getElementsByTagName("tweet");
+for(i=0;i<thing.length;i++) {
+console.log(getRemote("https://www.scratchyone.com/twitter/?username="+thing[i].innerHTML))
+thing[i].innerHTML=getRemote("https://www.scratchyone.com/twitter/?username="+thing[i].innerHTML);
+}
+});
+</script>
+<script>
+$(document).ready(function(){
+function getRemote(remote_url) {
+    return $.ajax({
+        type: "GET",
+        url: remote_url,
+        async: false
+    }).responseText;
+}
+thing=document.getElementsByTagName("get");
+for(i=0;i<thing.length;i++) {
+//console.log(getRemote(thing[i].innerHTML))
+thing[i].innerHTML=getRemote("https://crossorigin.me/"+thing[i].innerHTML);
+}
+function get(url) {
+getRemote("https://crossorigin.me/"+url);
+}
+});
+
+$(document).ready(function() {
+thing=document.getElementsByClassName("md");for (i=0;i<thing.length;i++) {
+it = thing[i];
+it.innerHTML=marked(it.innerHTML);
+}
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73560713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://www.scratchyone.com/prism.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.scratchyone.com/prism.css">

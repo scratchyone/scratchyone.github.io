@@ -1,0 +1,30 @@
+<title>Eascape</title>
+<script>
+function escapeHtml(text) {
+  var map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&#62;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+function run() {
+stuffsplit=document.getElementById("stuff").value.split("");;
+for(i=0;i<stuffsplit.length;i++) {
+stuffsplit[i]="&#"+stuffsplit[i].charCodeAt(0)+";"
+}
+document.getElementById("stuff").value=stuffsplit.join("");
+}
+function htmlDecode(input){
+  var e = document.createElement('div');
+  e.innerHTML = input;
+  return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+}
+</script>
+<button onclick='stuff=document.getElementById("stuff");stuff.value=escapeHtml(stuff.value)'>Escape!</button>
+<button onclick='run()'>Escape All!</button>
+<button onclick='stuff.value=htmlDecode(htmlDecode(stuff.value))'>Unescape!</button><br>
+<textarea id="stuff" rows="15" cols="50"></textarea>
