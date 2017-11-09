@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Blog &#8211; Scratchyone&#039;s Blog</title>
+	<atom:link href="http://scratchyone.github.io/blog/category/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>http://scratchyone.github.io/blog</link>
+	<description>Just another WordPress site</description>
+	<lastBuildDate>Mon, 06 Nov 2017 22:44:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.3</generator>
+	<item>
+		<title>Calculating the distance between two points with the Pythagorean Theorem</title>
+		<link>http://scratchyone.github.io/blog/2016/08/23/calculating-the-distance-between-two-points-with-the-pythagorean-theorem/</link>
+		<comments>http://scratchyone.github.io/blog/2016/08/23/calculating-the-distance-between-two-points-with-the-pythagorean-theorem/#comments</comments>
+		<pubDate>Tue, 23 Aug 2016 15:47:08 +0000</pubDate>
+		<dc:creator><![CDATA[scratchyone]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=76</guid>
+		<description><![CDATA[So, before we get started, I need to define some things. Right Triangle: A right triangle is a triangle with a right angle. Pythagorean Theorem The Pythagorean Theorem says that .  and  are the two shorter sides of the right triangle. The long side is called the hypotenuse. From now on we will refer to as [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>So, before we get started, I need to define some things.<br />
+<strong>Right Triangle</strong>:<br />
+A right triangle is a triangle with a right angle.<br />
+<img class="alignnone size-full wp-image-78" src="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/220px-Triangle.Right_.svg_.png" alt="220px-Triangle.Right.svg" width="220" height="166" /><br />
+<strong>Pythagorean Theorem<br />
+</strong>The Pythagorean Theorem says that <span class="wp-katex-eq" data-display="false">a^2+b^2=c^2</span>. <span class="wp-katex-eq" data-display="false">a</span> and <span class="wp-katex-eq" data-display="false">b</span> are the two shorter sides of the right triangle. The long side is called the hypotenuse. From now on we will refer to <span class="wp-katex-eq" data-display="false">c</span> as <span class="wp-katex-eq" data-display="false">h</span>. If we want to get <span class="wp-katex-eq" data-display="false">h</span>, instead of <span class="wp-katex-eq" data-display="false">h^2</span>, we can do <span class="wp-katex-eq" data-display="false">h=\sqrt {a^2+b^2}</span></p>
+<p><img class="alignnone size-medium wp-image-105" src="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/Pythagorean-Theorem-300x169.jpg" alt="Pythagorean-Theorem" width="300" height="169" srcset="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/Pythagorean-Theorem-300x169.jpg 300w, http://scratchyone.github.io/blog/wp-content/uploads/2016/08/Pythagorean-Theorem-768x432.jpg 768w, http://scratchyone.github.io/blog/wp-content/uploads/2016/08/Pythagorean-Theorem-1024x576.jpg 1024w, http://scratchyone.github.io/blog/wp-content/uploads/2016/08/Pythagorean-Theorem.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Ok. Now that we&#8217;re done with that, we can start actually calculating distance. This part is pretty simple. Imagine we have a cat that wants to get to a mouse, but needs to know how far away it is. The cat is at 0,0, and the mouse is at 5,5. Let&#8217;s call the cat&#8217;s x and y &#8220;cx&#8221; and &#8220;cy&#8221; , and let&#8217;s call the mouse&#8217;s x and y &#8220;mx&#8221; and &#8220;my&#8221;.In many of these equations, I will be using <span class="wp-katex-eq" data-display="false">||</span> a lot. If a number is between those bars, it means that it will be made positive (<span class="wp-katex-eq" data-display="false">|-5|=5</span>). First, we find <span class="wp-katex-eq" data-display="false">|cx-mx|</span>, and we find <span class="wp-katex-eq" data-display="false">|cy-my|</span>. These are the differences between the x values and the y values. Now we take those numbers (let&#8217;s call them &#8220;dx&#8221; and &#8220;dy&#8221;). To get <span class="wp-katex-eq" data-display="false">h^2</span>, we do <span class="wp-katex-eq" data-display="false">h^2=dx^2 + dy^2</span>. Now we can do <span class="wp-katex-eq" data-display="false">h=\sqrt {h^2}</span>. We are done. <span class="wp-katex-eq" data-display="false">h</span> is our distance. This seems long, but we just produced a short formula to find distance. Here is the completed formula: <span class="wp-katex-eq" data-display="false">h=\sqrt {(|cx-mx|)^2+(|cy-my|)^2}</span><br />
+For those of you still having trouble, this might help explain why you can&#8217;t just add dx and dy, and why you are using right triangles:<br />
+<a href="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/ptfindingdistances.png"><img class="alignnone size-medium wp-image-101" src="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/ptfindingdistances-300x300.png" alt="ptfindingdistances" width="300" height="300" srcset="http://scratchyone.github.io/blog/wp-content/uploads/2016/08/ptfindingdistances-300x300.png 300w, http://scratchyone.github.io/blog/wp-content/uploads/2016/08/ptfindingdistances-150x150.png 150w, http://scratchyone.github.io/blog/wp-content/uploads/2016/08/ptfindingdistances.png 700w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://scratchyone.github.io/blog/2016/08/23/calculating-the-distance-between-two-points-with-the-pythagorean-theorem/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>My posts have issues!</title>
+		<link>http://scratchyone.github.io/blog/2016/05/05/my-posts-have-issues/</link>
+		<comments>http://scratchyone.github.io/blog/2016/05/05/my-posts-have-issues/#respond</comments>
+		<pubDate>Thu, 05 May 2016 23:25:12 +0000</pubDate>
+		<dc:creator><![CDATA[scratchyone]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=71</guid>
+		<description><![CDATA[I have a new IFTTT recipe that I made! It takes all my posts and puts them as an issue in this repository. I just wanted to learn IFTTT.]]></description>
+				<content:encoded><![CDATA[<p>I have a new IFTTT recipe that I made! It takes all my posts and puts them as an issue <a href="https://github.com/scratchyone/blog-posts/issues" target="_blank">in this repository</a>. I just wanted to learn IFTTT.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://scratchyone.github.io/blog/2016/05/05/my-posts-have-issues/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>On-The-Fly Code Injection (Inserting Header and Footer)</title>
+		<link>http://scratchyone.github.io/blog/2016/01/17/on-the-fly-code-injection-inserting-header-and-footer/</link>
+		<comments>http://scratchyone.github.io/blog/2016/01/17/on-the-fly-code-injection-inserting-header-and-footer/#respond</comments>
+		<pubDate>Sun, 17 Jan 2016 14:33:00 +0000</pubDate>
+		<dc:creator><![CDATA[scratchyone]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=33</guid>
+		<description><![CDATA[Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&#160;this&#160;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&nbsp;<a href="https://www.scratchyone.com/favicons.html" target="_blank">this</a>&nbsp;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe someone will want it.<br />
+Htaccess:<br />
+<code><br />
+RewriteEngine On<br />
+RewriteRule ^head_foot.php$ - [L]<br />
+RewriteCond %{REQUEST_FILENAME} -f<br />
+RewriteCond %{REQUEST_URI} !^/joke/ #Exclude scripts that generate images. This will corrupt them.<br />
+RewriteRule \.(php|htm|html)$ /head_foot.php [E=FILE:%{SCRIPT_FILENAME},L]<br />
+</code></p>
+<p>head_foot.php:<br />
+<code><br />
+&lt;?php<br />
+include(&quot;header.html&quot;); #Add Header<br />
+#Now get webpage:<br />
+include getenv(&#039;REDIRECT_FILE&#039;);<br />
+?&gt;<br />
+</code></p>
+]]></content:encoded>
+			<wfw:commentRss>http://scratchyone.github.io/blog/2016/01/17/on-the-fly-code-injection-inserting-header-and-footer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New site additions!</title>
+		<link>http://scratchyone.github.io/blog/2016/01/16/new-site-additions/</link>
+		<comments>http://scratchyone.github.io/blog/2016/01/16/new-site-additions/#comments</comments>
+		<pubDate>Sun, 17 Jan 2016 01:24:48 +0000</pubDate>
+		<dc:creator><![CDATA[scratchyone]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=27</guid>
+		<description><![CDATA[I have decided to add some new features to my site. Now some code is automatically added to my site. For example, now I can use&#160;Markdown. That is a new feature I added. My site also automatically adds LaTeX. Apparently WordPress doesn&#8217;t like my new &#8220;&#60;&#109;&#100;&#62;&#8221; tags, so I can&#8217;t use Markdown in WordPress.]]></description>
+				<content:encoded><![CDATA[<p>I have decided to add some new features to my site. Now some code is automatically added to my site. For example, now I can use&nbsp;<a href="https://help.github.com/articles/markdown-basics/">Markdown</a>. That is a new feature I added. My site also automatically adds LaTeX. Apparently WordPress doesn&#8217;t like my new &#8220;&#60;&#109;&#100;&#62;&#8221; tags, so I can&#8217;t use Markdown in WordPress.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://scratchyone.github.io/blog/2016/01/16/new-site-additions/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Hello world!</title>
+		<link>http://scratchyone.github.io/blog/2015/12/30/hello-world-2/</link>
+		<comments>http://scratchyone.github.io/blog/2015/12/30/hello-world-2/#comments</comments>
+		<pubDate>Wed, 30 Dec 2015 16:12:33 +0000</pubDate>
+		<dc:creator><![CDATA[scratchyone]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://scratchyone.com/blog/?p=1</guid>
+		<description><![CDATA[Welcome to my blog. Lot&#8217;s of people seemed to be doing blogs, so I decided it was time for me to create one too. I will try to post (sort of) often. How do you like the theme? I just did a major website redesign.]]></description>
+				<content:encoded><![CDATA[<p>Welcome to my blog. Lot&#8217;s of people seemed to be doing blogs, so I decided it was time for me to create one too. I will try to post (sort of) often. How do you like the theme? I just did a major website redesign.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://scratchyone.github.io/blog/2015/12/30/hello-world-2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>
