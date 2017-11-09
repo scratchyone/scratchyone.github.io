@@ -32,6 +32,7 @@ img.emoji {
 <link rel='stylesheet' id='kichu_ubuntu-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A300%2C400%2C700%2C400italic&#038;ver=4.8.3' type='text/css' media='all' />
 <link rel='stylesheet' id='kichu_oswald-css'  href='//fonts.googleapis.com/css?family=Oswald%3A400%2C300%2C700&#038;ver=4.8.3' type='text/css' media='all' />
 <link rel='stylesheet' id='kichu_font_awesome-css'  href='/blog/wp-content/themes/kichu/assets/font-awesome/css/font-awesome.min.css?ver=4.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='codecolorer-css'  href='/blog/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.14' type='text/css' media='screen' />
 <script type='text/javascript' src='/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <link rel='https://api.w.org/' href='/blog/wp-json/' />
@@ -122,22 +123,18 @@ For those of you still having trouble, this might help explain why you can&#8217
 
 			<div class="content">
                     					<p>Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&nbsp;<a href="https://www.scratchyone.com/favicons.html" target="_blank">this</a>&nbsp;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe someone will want it.<br />
-Htaccess:<br />
-<code><br />
-RewriteEngine On<br />
+Htaccess:</p>
+<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="text codecolorer">RewriteEngine On<br />
 RewriteRule ^head_foot.php$ - [L]<br />
 RewriteCond %{REQUEST_FILENAME} -f<br />
 RewriteCond %{REQUEST_URI} !^/joke/ #Exclude scripts that generate images. This will corrupt them.<br />
-RewriteRule \.(php|htm|html)$ /head_foot.php [E=FILE:%{SCRIPT_FILENAME},L]<br />
-</code></p>
-<p>head_foot.php:<br />
-<code><br />
-&lt;?php<br />
-include(&quot;header.html&quot;); #Add Header<br />
-#Now get webpage:<br />
-include getenv(&#039;REDIRECT_FILE&#039;);<br />
-?&gt;<br />
-</code></p>
+RewriteRule \.(php|htm|html)$ /head_foot.php [E=FILE:%{SCRIPT_FILENAME},L]</div></div>
+<p>head_foot.php:</p>
+<div class="codecolorer-container php default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="php codecolorer"><span class="kw2">&lt;?php</span><br />
+<span class="kw1">include</span><span class="br0">&#40;</span><span class="st0">&quot;header.html&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co2">#Add Header<br />
+</span><span class="co2">#Now get webpage:<br />
+</span><span class="kw1">include</span> <a href="http://www.php.net/getenv"><span class="kw3">getenv</span></a><span class="br0">&#40;</span><span class="st_h">'REDIRECT_FILE'</span><span class="br0">&#41;</span><span class="sy0">;</span><br />
+<span class="sy1">?&gt;</span></div></div>
 			</div>
 
 		
