@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>Comments on: My posts have issues!</title>
-	<atom:link href="https://scratchyone.github.io/blog/2016/05/05/my-posts-have-issues/feed/" rel="self" type="application/rss+xml" />
-	<link>https://scratchyone.github.io/blog/2016/05/05/my-posts-have-issues/</link>
+	<atom:link href="/blog/2016/05/05/my-posts-have-issues/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog/2016/05/05/my-posts-have-issues/</link>
 	<description>Just another WordPress site</description>
 	<lastBuildDate>Tue, 23 Aug 2016 22:44:24 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
