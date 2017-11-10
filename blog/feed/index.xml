@@ -68,13 +68,13 @@ For those of you still having trouble, this might help explain why you can&#8217
 		<description><![CDATA[Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&#160;this&#160;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>Recently, I added a feature to my website that allowed me to inject code into my site. Currently all pages in my site have&nbsp;<a href="https://www.scratchyone.com/favicons.html" target="_blank">this</a>&nbsp;code injected into them. It adds my favicon, LaTeX, Markdown, and an emoji tag I created. I had a lot of trouble finding this, so I will show you my code. Maybe someone will want it.<br />
 Htaccess:</p>
-<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;width:435px;"><div class="text codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;">RewriteEngine On<br />
+<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;"><div class="text codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;">RewriteEngine On<br />
 RewriteRule ^head_foot.php$ - [L]<br />
 RewriteCond %{REQUEST_FILENAME} -f<br />
 RewriteCond %{REQUEST_URI} !^/joke/ #Exclude scripts that generate images. This will corrupt them.<br />
 RewriteRule \.(php|htm|html)$ /head_foot.php [E=FILE:%{SCRIPT_FILENAME},L]</div></div>
 <p>head_foot.php:</p>
-<div class="codecolorer-container php default" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;width:435px;"><div class="php codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;"><span style="color: #000000; font-weight: bold;">&lt;?php</span><br />
+<div class="codecolorer-container php default" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;"><div class="php codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;"><span style="color: #000000; font-weight: bold;">&lt;?php</span><br />
 <span style="color: #b1b100;">include</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;header.html&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">#Add Header<br />
 </span><span style="color: #666666; font-style: italic;">#Now get webpage:<br />
 </span><span style="color: #b1b100;">include</span> <a href="http://www.php.net/getenv"><span style="color: #990000;">getenv</span></a><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'REDIRECT_FILE'</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br />
