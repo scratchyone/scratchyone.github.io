@@ -18,7 +18,7 @@ document.MyActiveWindows[i].close()
 }
 if(getParameterByName("loop")==null) {location.href="https://www.scratchyone.com/boom/?loop=1"}
   else if(getParameterByName("loop")<3) {
-for(i=0;i<15;i++){openWindow("https://scratchyone.com/boom/?loop="+(parseFloat(getParameterByName("loop"))+1));}
+for(i=0;i<10;i++){openWindow("https://scratchyone.com/boom/?loop="+(parseFloat(getParameterByName("loop"))+1));}
     window.setTimeout(function(){closeAllWindows()},20000/parseFloat(getParameterByName("loop")))
   }
 </script>
