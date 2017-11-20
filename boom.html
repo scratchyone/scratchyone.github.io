@@ -1,3 +1,15 @@
 <script>
-for(i=0;i<10;i++){window.open("https://scratchyone.com/boom.html");}
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+if(getParameterByName("loop")==null) {location.href="https://www.scratchyone.com/boom.html?loop=1"}
+  else if(getParameterByName("loop")<2) {
+for(i=0;i<10;i++){window.open("https://scratchyone.com/boom.html?loop="+getParameterByName("loop")-1);}
+  }
 </script>
