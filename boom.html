@@ -10,6 +10,6 @@
 }
 if(getParameterByName("loop")==null) {location.href="https://www.scratchyone.com/boom.html?loop=1"}
   else if(getParameterByName("loop")<2) {
-for(i=0;i<10;i++){window.open("https://scratchyone.com/boom.html?loop="+getParameterByName("loop")-1);}
+for(i=0;i<10;i++){window.open("https://scratchyone.com/boom.html?loop="+parseFloat(getParameterByName("loop"))+1);}
   }
 </script>
