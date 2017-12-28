@@ -1,6 +1,6 @@
 <script>
 function reqListener(h) {
-document.getElementById("text").innerHTML=h
+document.getElementById("text").innerHTML=h.responseXML
 }
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
