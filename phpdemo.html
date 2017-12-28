@@ -1,5 +1,6 @@
 <script>
 function reqListener(h) {
+  console.log(h)
 document.getElementById("text").innerHTML=h.responseXML
 }
 var oReq = new XMLHttpRequest();
