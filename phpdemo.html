@@ -1,0 +1,12 @@
+<script>
+function reqListener(h) {
+document.getElementById("text").innerHTML=h
+}
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "https://backend.scratchyone.com/test.php");
+oReq.send();
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css" rel="stylesheet">
+<h1>Hello!</h1>
+<h5 id="text"></h5>
