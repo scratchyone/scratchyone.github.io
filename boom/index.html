@@ -1,24 +1,25 @@
 <script>
-  document.MyActiveWindows=[]
-function openWindow(sUrl,sName,sProps){
-document.MyActiveWindows.push(window.open(sUrl,sName,sProps))
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-function closeAllWindows(){
-for(var i = 0;i < document.MyActiveWindows.length; i++)
-document.MyActiveWindows[i].close()
-}
-  function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-if(getParameterByName("loop")==null) {location.href="https://www.scratchyone.com/boom/?loop=1"}
-  else if(getParameterByName("loop")<4) {
-for(i=0;i<10;i++){openWindow("https://scratchyone.com/boom/?loop="+(parseFloat(getParameterByName("loop"))+1));}
-    window.setTimeout(function(){closeAllWindows()},10000/parseFloat(getParameterByName("loop")))
+if (getParameterByName("loop") == null) {
+  location.href = "https://www.scratchyone.com/boom/?loop=1";
+} else if (getParameterByName("loop") < 4) {
+  for (var i = 0; i < 10; i++) {
+    window.open(
+      "https://scratchyone.com/boom/?loop=" +
+        (parseFloat(getParameterByName("loop")) + 1)
+    );
   }
+  window.setTimeout(function() {
+    window.open(location, "_self").close();
+  }, 10000);
+}
+
 </script>
