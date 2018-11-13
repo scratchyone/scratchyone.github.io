@@ -8,19 +8,27 @@ function getParameterByName(name, url) {
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+if(parseFloat(getParameterByName("loop"))==1) {
+  var popUp=window.open("https://google.com")
+  if(popUp == null || typeof(popUp)=='undefined') {
+    document.write("<h1>Please shut off your popup blocker and reload the page!</h1>")
+  }
+  popUp.close()
+}
 if (getParameterByName("loop") == null) {
-  location.href = "https://www.scratchyone.com/boom/?loop=1";
+  location.href = location.protocol + '//' + location.host + location.pathname + "?loop=1";
 } else if (getParameterByName("loop") < 2) {
   for (var i = 0; i < 10; i++) {
     window.open(
-      "https://scratchyone.com/boom/?loop=" +
+      location.protocol + '//' + location.host + location.pathname+ "?loop=" +
         (parseFloat(getParameterByName("loop")) + 1)
     );
   }
 }
 
   window.setTimeout(function() {
-    window.open(location, "_self").close();
+    window.open(location.protocol + '//' + location.host + location.pathname + "?loop=500", "_self").close();
+    location.href="https://google.com"
   }, 10000);
 
 </script>
